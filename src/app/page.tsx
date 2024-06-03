@@ -11,8 +11,10 @@ export default async function Home() {
     });
 
     return (
+
         <HydrationBoundary state={dehydrate(queryClient)}>
         <main className="flex flex-col min-h-screen items-center justify-center gap-14">
+            {/*<ErrorComp errorCode={null} errorMessage={null} />*/}
             <SearchList/>
         </main>
         </HydrationBoundary>
